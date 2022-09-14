@@ -1,0 +1,43 @@
+{
+    "name": "@errore/renderer-console",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Matthias Einbrodt",
+    "license": "MIT",
+    "keywords": [
+        "error",
+        "typescript"
+    ],
+    "homepage": "https://github.com/mbrt-yeah/errore",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mbrt-yeah/errore"
+    },
+    "bugs": {
+        "url": "https://github.com/mbrt-yeah/errore/issues"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "npm run deleteBuildDir && tsc",
+        "deleteBuildDir": "del-cli --force ./dist",
+        "test": "npx ava"
+    },
+    "devDependencies": {
+        "@ava/typescript": "^3.0.1",
+        "@types/deepmerge": "^2.2.0",
+        "@types/node": "^18.7.16",
+        "ava": "^4.3.3",
+        "del-cli": "^4.0.1",
+        "ts-results": "^3.3.0",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "@errore/core": "^0.1.0",
+        "ansi-colors": "^4.1.3",
+        "cli-table3": "^0.6.2",
+        "deepmerge": "^4.2.2",
+        "stacktracey": "^2.1.8"
+    }
+}
